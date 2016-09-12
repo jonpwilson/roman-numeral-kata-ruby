@@ -13,7 +13,7 @@ describe "Roman Numeral Converter" do
       [ 20, "XX" ],
       [ 40, "XL"],
       [ 50, "L" ],
-      [ 2013, "MMXIII"],
+      [ 2016, "MMXVI"],
       [ 3999, "MMMCMXCIX"]
   ].each do |numeric_pair|
     it "#{numeric_pair[0]} should return #{numeric_pair[1]}" do
