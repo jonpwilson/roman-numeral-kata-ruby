@@ -16,27 +16,30 @@ class RomanNumerals
       ["I", 1]
   ]
 
-  def initialize(numeric)
-    @value = numeric
-  end
-
-  def is_valid
-    # Make sure that the number is between 0 and 4000 and that it is a valid number, as per the caveats
-    if @value > 0 && @value < 4000
-       if @value.is_a? Fixnum
-         return true
-       end
+  def generate(numeric)
+    if is_valid(numeric)
+      to_numeral(numeric)
+    else
+      'Please enter a valid number between 0 and 4000'
     end
-
-    return false
   end
 
-  def to_numeral
+  def is_valid(numeric)
+    # Make sure that the number is between 0 and 4000 and that it is a valid number, as per the caveats
+    if numeric.is_a? Fixnum
+      if numeric > 0 && numeric < 4000
+        return true
+      end
+    end
+    false
+  end
+
+  def to_numeral(numeric)
     result = ""
     NUMERALS.each do |numeral, arabic|
-      while @value >= arabic
+      while numeric >= arabic
         result += numeral
-        @value -= arabic
+        numeric -= arabic
       end
     end
     result

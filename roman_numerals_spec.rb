@@ -13,23 +13,24 @@ describe "Roman Numeral Converter" do
       [ 20, "XX" ],
       [ 40, "XL"],
       [ 50, "L" ],
-      [ 2013, "MMXIII"],
+      [ 2016, "MMXVI"],
       [ 3999, "MMMCMXCIX"]
   ].each do |numeric_pair|
+
+  numeral = RomanNumerals.new
     it "#{numeric_pair[0]} should return #{numeric_pair[1]}" do
-      numeral = RomanNumerals.new(numeric_pair[0])
-      numeral.to_numeral.should == numeric_pair[1]
+      expect(numeral.generate(numeric_pair[0])).to eq(numeric_pair[1])
     end
   end
 
   it "Should not accept zero" do
-    numeral = RomanNumerals.new(0)
-    numeral.is_valid.should == false
+    numeral = RomanNumerals.new
+    expect(numeral.generate(0)).to eq('Please enter a valid number between 0 and 4000')
   end
 
   it "Should not accept a value over 3999" do
-    numeral = RomanNumerals.new(4000)
-    numeral.is_valid.should == false
+    numeral = RomanNumerals.new
+    expect(numeral.generate(4000)).to eq('Please enter a valid number between 0 and 4000')
   end
 
 end
