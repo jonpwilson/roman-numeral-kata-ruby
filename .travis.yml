@@ -1,0 +1,9 @@
+language: ruby
+rvm:
+- 2.2
+- jruby
+script: bundle exec rspec roman_numerals_spec.rb
+addons:
+  code_climate:
+    repo_token:
+      secure: NzVh9kMQzM0JiTHg8ESjxmFppEVNWxzuHKdaqMZ+BLKl7UbXyWb1eAdm1q/MPUB9YQUattXBBI+N6jeG52gAx25J3wy48FVnP8Ew3YNOKo4ekPB8//PXX8lzAtWQBULa6STTmJR+aY6V9OXJpqB+V3qwmkEOJxL5G2eQ8pNN/eKN/iOeuJfgIvr1afHKZGZNIyDOQz8xd0UvJvWpfvFRnbD0RRE4Gzx17YV/0XjAOeuDMPnKeiZYLCjLg29cHzph1doNh3XanoZbyawl2vmc9RiIYnX/EOFrui3kk6nr4GVCExIWmxLcN246CFFlw45E7yC31GOaTMTinGRAHfMVdypqqel1clUQ7gPgATcudxZXp99fj28WT1JWCi8qkId3DTTJLiSBnv+jSW+TkK+oq44WarmxkYx0WKcpk3XQv3SmgG7WcDC9fi2h+/la3mwH5hwGZ71OgH3DeRYhf2aGxzBp6ttwjeO/Dk/b/TR+bTtfAAqt6nX3GxcNYI16tV8GhAbaF5xGSyBfvPrfRjeRfqIGOPuq35u5qbfNtcKQuq0o3Zm7+ZLKpcCuNZbw19j3L/NVlGo37J5omIyEavAmLyzf01FFD8Ts1ZWmIzsk/WadZLYkMKW9ZJELcF8zbfNDAC41DVFQrueDF0Sl4nK9Mh3Tuk6IJhvBiYGwgdkS5pk=
