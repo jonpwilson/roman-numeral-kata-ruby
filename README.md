@@ -1,3 +1,5 @@
+[![Code Climate](https://codeclimate.com/github/jonpwilson/roman-numeral-kata-ruby/badges/gpa.svg)](https://codeclimate.com/github/jonpwilson/roman-numeral-kata-ruby) [![Test Coverage](https://codeclimate.com/github/jonpwilson/roman-numeral-kata-ruby/badges/coverage.svg)](https://codeclimate.com/github/jonpwilson/roman-numeral-kata-ruby/coverage)
+
 Roman Numeral Kata
 ==================
 
